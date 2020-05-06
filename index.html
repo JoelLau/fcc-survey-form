@@ -4,99 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Survey Form</title>
 </head>
 
 <body>
-    <main>
+    <main class="stack readable-width">
         <h1 id="title">
-            TITLE
+            GOOD SURVEY FORM
         </h1>
         <p id="description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora officia obcaecati optio amet? Quaerat,
-            eveniet suscipit optio quisquam animi totam neque minima perspiciatis voluptas reiciendis nam, expedita vero
-            est amet!
+            Tell me how much you love this form!
         </p>
-        <form action="#" id="survey-form">
-            <div>
+        <form action="#" id="survey-form" class="stack">
+            <div class="form-field">
                 <label for="name" id="name-label">
-                    Name
+                    What is your name?
                 </label>
-                <input type="text" name="name" id="name" placeholder="john doe" required />
+                <input type="text" name="name" id="name" placeholder="e.g. john doe" required />
             </div>
-            <div>
+            <div class="form-field">
                 <label for="email" id="email-label">
-                    Email
+                    What is your email address?
                 </label>
-                <input type="email" name="email" id="email" placeholder="john.doe@email.com" required />
+                <input type="email" name="email" id="email" placeholder="e.g. john.doe@awesome.io" required />
             </div>
-            <div>
+            <div class="form-field">
                 <label for="number" id="number-label">
-                    Number
+                    How would you rate this survey form?
+                    <br />
+                    <small>(Out of 10)</small>
                 </label>
-                <input type="number" name="number" id="number" min="0" max="120" placeholder="0" />
-            </div>
-            <div>
-                <label for="dropdown">
-                    <select name="dropdown" id="dropdown">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="non-binary">Non-binary</option>
-                        <option value="prefer-not-to-say">Prefer Not To Say</option>
-                    </select>
-                </label>
+                <input type="number" name="number" id="number" min="9" max="10" placeholder="e.g. 10" value="10" />
             </div>
             <fieldset>
-                <legend>feelings</legend>
-                <label for="feelings-strongly-disagree">
-                    <input type="radio" name="feelings" id="feelings-strongly-disagree" value="strongly-disagree" />
-                    strongly-disagree
-                </label>
-                <label for="feelings-disagree">
-                    <input type="radio" name="feelings" id="feelings-disagree" value="disagree" />
-                    disagree
-                </label>
-                <label for="feelings-neutral">
+                <legend>Feelings</legend>
+                <label for="feelings-neutral" class="toggle-button">
                     <input type="radio" name="feelings" id="feelings-neutral" value="neutral" />
-                    neutral
+                    <div class="toggle-button__clickable">
+                        <i class="toggle-button__clickable__icon">👍</i>
+                        <span>Feeling Good</span>
+                    </div>
                 </label>
-                <label for="feelings-agree">
-                    <input type="radio" name="feelings" id="feelings-agree" value="agree" />
-                    agree
+                <label for="feelings-disagree" class="toggle-button">
+                    <input type="radio" name="feelings" id="feelings-disagree" value="disagree" />
+                    <div class="toggle-button__clickable">
+                        <i class="toggle-button__clickable__icon">😂</i>
+                        <span>I'm Crying</span>
+                    </div>
                 </label>
-                <label for="feelings-strongly-agree">
-                    <input type="radio" name="feelings" id="feelings-strongly-agree" value="strongly-agree" />
-                    strongly-agree
+                <label for="radio-mind-blown" class="toggle-button">
+                    <input type="radio" name="feelings" id="radio-mind-blown" value="strongly-disagree" />
+                    <div class="toggle-button__clickable">
+                        <i class="toggle-button__clickable__icon">🤯</i>
+                        <span>My Mind Is Blown</span>
+                    </div>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>checkboxes</legend>
-                <label for="checkboxes-strongly-disagree">
+                <label for="checkboxes-strongly-disagree" class="toggle-button">
                     <input type="checkbox" name="checkboxes" id="checkboxes-strongly-disagree"
                         value="strongly-disagree" />
                     strongly-disagree
                 </label>
-                <label for="checkboxes-disagree">
+                <label for="checkboxes-disagree" class="toggle-button">
                     <input type="checkbox" name="checkboxes" id="checkboxes-disagree" value="disagree" />
                     disagree
                 </label>
-                <label for="checkboxes-neutral">
-                    <input type="checkbox" name="checkboxes" id="checkboxes-neutral" value="neutral" />
-                    neutral
-                </label>
-                <label for="checkboxes-agree">
-                    <input type="checkbox" name="checkboxes" id="checkboxes-agree" value="agree" />
-                    agree
-                </label>
-                <label for="checkbox-strongly-agree">
+                <label for="checkbox-strongly-agree" class="toggle-button">
                     <input type="checkbox" name="checkbox" id="checkbox-strongly-agree" value="strongly-agree" />
                     strongly-agree
                 </label>
             </fieldset>
-            <div>
-                <label for="additional-comments">
-                    <textarea name="additional-comments" id="additional-comments"></textarea>
+            <div class="form-field">
+                <label for="dropdown">
+                    What would you like to tell the developers who built this form?
                 </label>
+                <select name="dropdown" id="dropdown">
+                    <option value="great">This form is great!</option>
+                    <option value="love">I love this form!</option>
+                    <option value="best">This is the best!</option>
+                    <option value="others">Others ...</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="additional-comments">Other Comments</label>
+                <textarea name="additional-comments" id="additional-comments"></textarea>
             </div>
             <div>
                 <button type="submit" id="submit">

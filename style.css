@@ -1,0 +1,86 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+  padding-top: 1.5em;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+select,
+textarea,
+fieldset,
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 1em;
+  border: 2px solid black;
+}
+
+label {
+  text-align: left;
+  position: relative;
+  bottom: -1px;
+  text-transform: capitalize;
+}
+
+legend {
+  text-transform: capitalize;
+}
+
+#survey-form {
+  border: 2px solid black;
+  padding: 2em;
+  max-width: 60em;
+}
+
+#title {
+  margin-bottom: 0;
+}
+
+.form-field {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stack > * + * {
+  margin-top: 1.5rem;
+}
+
+.toggle-button {
+  cursor: pointer;
+}
+
+.toggle-button input[type="radio"],
+.toggle-button input[type="checkbox"] {
+  display: none;
+}
+
+input:checked ~ .toggle-button__clickable {
+  border: 2px solid purple;
+}
+
+.toggle-button__clickable__icon {
+  display: block;
+  font-style: unset;
+}
+
+textarea {
+  display: block;
+}
+
+.readable-width {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
