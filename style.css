@@ -45,7 +45,6 @@ input[type="email"] {
 }
 
 #number {
-  min-width: unset;
   width: 5em;
 }
 
@@ -210,6 +209,12 @@ input[type="button"] {
     grid-template-columns: 100%;
     row-gap: 2.5em;
     padding-top: 0.5em;
+  }
+}
+
+@media (max-width: 390px) {
+  #survey-form {
+    padding: 2em 1em;
   }
 }
 
