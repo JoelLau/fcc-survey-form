@@ -17,7 +17,8 @@
         <p id="description">
             Tell me how much you love this form!
         </p>
-        <form action="mailto:joel.lau@protonmail.com" method="get" enctype="text/plain" id="survey-form" class="stack">
+        <form action="mailto:joel.lau@protonmail.com?subject=good&nbsp;form" enctype="text/plain" id="survey-form"
+            class="stack">
             <div class="form-field">
                 <label for="name" id="name-label">
                     What is your name?
@@ -41,42 +42,10 @@
                     tabindex="3" />
             </div>
             <fieldset>
-                <legend>What parts do you like about this form? <br /> <small>(Choose one)</small></legend>
+                <legend>Feelings <br /> <small>(Choose One)</small></legend>
                 <div class="toggle-button-container">
-                    <label for="checkboxes-strongly-disagree" class="toggle-button">
-                        <input type="radio" name="checkboxes" id="checkboxes-strongly-disagree"
-                            value="strongly-disagree" />
-                        <div class="toggle-button__clickable">
-                            Creative Use Of Color
-                        </div>
-                    </label>
-                    <label for="checkbox-strongly-agree" class="toggle-button">
-                        <input type="radio" name="checkboxes" id="checkbox-strongly-agree" value="strongly-agree" />
-                        <div class="toggle-button__clickable">
-                            Fantastic User Experience
-                        </div>
-                    </label>
-                    <label for="checkboxes-disagree" class="toggle-button">
-                        <input type="radio" name="checkboxes" id="checkboxes-disagree" value="disagree" checked />
-                        <div class="toggle-button__clickable">
-                            Thoughtful answers to each question
-                        </div>
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Feelings <br /> <small>(Pick One)</small></legend>
-                <div class="toggle-button-container">
-                    <label for="radio-mind-blown" class="toggle-button">
-                        <input type="radio" name="feelings" id="radio-mind-blown" value="strongly-disagree" disabled
-                            tabindex="4" />
-                        <div class="toggle-button__clickable">
-                            This is the worst thing I've ever seen
-                        </div>
-                    </label>
-                    <label for="feelings-neutral" class="toggle-button">
-                        <input type="radio" name="feelings" id="feelings-neutral" value="neutral" checked
-                            tabindex="5" />
+                    <label for="feelings-fire" class="toggle-button">
+                        <input type="radio" name="feelings" id="feelings-fire" value="fire" tabindex="" checked />
                         <div class="toggle-button__clickable">
                             This is 🔥🔥
                         </div>
@@ -87,6 +56,36 @@
                             Best. Form. Ever.
                         </div>
                     </label>
+                    <label for="radio-worst-thing" class="toggle-button">
+                        <input type="radio" name="feelings" id="radio-worst-thing" value="worst-thing" tabindex="4"
+                            disabled />
+                        <div class="toggle-button__clickable">
+                            This is the worst thing I've ever seen
+                        </div>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>What parts do you like about this form? <br /> <small>(Choose all that apply)</small></legend>
+                <div class="toggle-button-container">
+                    <label for="checkbox-creative-color" class="toggle-button">
+                        <input type="checkbox" name="checkbox" id="checkbox-creative-color" value="creative-color" />
+                        <div class="toggle-button__clickable">
+                            Creative Use Of Color
+                        </div>
+                    </label>
+                    <label for="checkbox-fantastic-ux" class="toggle-button">
+                        <input type="checkbox" name="checkbox" id="checkbox-fantastic-ux" value="fantastic-ux" />
+                        <div class="toggle-button__clickable">
+                            Fantastic User Experience
+                        </div>
+                    </label>
+                    <label for="checkbox-thoughtful" class="toggle-button">
+                        <input type="checkbox" name="checkbox" id="checkbox-thoughtful" value="thoughtful" />
+                        <div class="toggle-button__clickable">
+                            Thoughtful answers to each question
+                        </div>
+                    </label>
                 </div>
             </fieldset>
             <div class="form-field">
@@ -94,9 +93,8 @@
                     What improvements would you like to see to this form?
                 </label>
                 <select name="dropdown" id="dropdown" required>
-                    <option value="" disabled selected>Better options</option>
-                    <option value="" disabled>Larger font size</option>
-                    <option value="perfect">None - this form is perfect as it is!</option>
+                    <option value="perfect" selected>None - this form is perfect as it is!</option>
+                    <option value="blinding">Make it less awesome, its greatness is blinding</option>
                 </select>
             </div>
             <div class="form-field always-mobile">
