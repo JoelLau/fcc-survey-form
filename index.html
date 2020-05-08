@@ -23,14 +23,14 @@
                 <label for="name" id="name-label">
                     What is your name?
                 </label>
-                <input type="text" name="name" id="name" placeholder="e.g. john doe" required autofocus tabindex="1" />
+                <input type="text" name="name" id="name" placeholder="e.g. john doe" tabindex="1" required autofocus />
             </div>
             <div class="form-field">
                 <label for="email" id="email-label">
                     What is your email address?
                 </label>
-                <input type="email" name="email" id="email" placeholder="e.g. john.doe@awesome.io" required
-                    tabindex="2" />
+                <input type="email" name="email" id="email" placeholder="e.g. john.doe@awesome.io" tabindex="2"
+                    required />
             </div>
             <div class="form-field">
                 <label for="number" id="number-label">
@@ -39,26 +39,25 @@
                     <small>(Out of 10)</small>
                 </label>
                 <input type="number" name="number" id="number" min="9" max="10" placeholder="e.g. 10" value="10"
-                    tabindex="3" />
+                    tabindex="3" required />
             </div>
             <fieldset>
                 <legend>Feelings <br /> <small>(Choose One)</small></legend>
                 <div class="toggle-button-container">
-                    <label for="feelings-fire" class="toggle-button">
-                        <input type="radio" name="feelings" id="feelings-fire" value="fire" tabindex="" checked />
+                    <label for="feelings-fire" class="toggle-button" tabindex="4">
+                        <input type="radio" name="feelings" id="feelings-fire" value="fire" checked />
                         <div class="toggle-button__clickable">
                             This is 🔥🔥
                         </div>
                     </label>
-                    <label for="feelings-disagree" class="toggle-button">
+                    <label for="feelings-disagree" class="toggle-button" tabindex="5">
                         <input type="radio" name="feelings" id="feelings-disagree" value="disagree" />
                         <div class="toggle-button__clickable">
                             Best. Form. Ever.
                         </div>
                     </label>
-                    <label for="radio-worst-thing" class="toggle-button">
-                        <input type="radio" name="feelings" id="radio-worst-thing" value="worst-thing" tabindex="4"
-                            disabled />
+                    <label for="radio-worst-thing" class="toggle-button" tabindex="6">
+                        <input type="radio" name="feelings" id="radio-worst-thing" value="worst-thing" disabled />
                         <div class="toggle-button__clickable">
                             This is the worst thing I've ever seen
                         </div>
@@ -68,20 +67,23 @@
             <fieldset>
                 <legend>What parts do you like about this form? <br /> <small>(Choose all that apply)</small></legend>
                 <div class="toggle-button-container">
-                    <label for="checkbox-creative-color" class="toggle-button">
-                        <input type="checkbox" name="checkbox" id="checkbox-creative-color" value="creative-color" />
+                    <label for="checkbox-creative-color" class="toggle-button" tabindex="7">
+                        <input type="checkbox" name="checkbox" id="checkbox-creative-color" value="creative-color"
+                            tabindex="7" />
                         <div class="toggle-button__clickable">
                             Creative Use Of Color
                         </div>
                     </label>
-                    <label for="checkbox-fantastic-ux" class="toggle-button">
-                        <input type="checkbox" name="checkbox" id="checkbox-fantastic-ux" value="fantastic-ux" />
+                    <label for="checkbox-fantastic-ux" class="toggle-button" tabindex="8">
+                        <input type="checkbox" name="checkbox" id="checkbox-fantastic-ux" value="fantastic-ux"
+                            tabindex="8" />
                         <div class="toggle-button__clickable">
                             Fantastic User Experience
                         </div>
                     </label>
-                    <label for="checkbox-thoughtful" class="toggle-button">
-                        <input type="checkbox" name="checkbox" id="checkbox-thoughtful" value="thoughtful" />
+                    <label for="checkbox-thoughtful" class="toggle-button" tabindex="9">
+                        <input type="checkbox" name="checkbox" id="checkbox-thoughtful" value="thoughtful"
+                            tabindex="9" />
                         <div class="toggle-button__clickable">
                             Thoughtful answers to each question
                         </div>
@@ -92,17 +94,17 @@
                 <label for="dropdown">
                     What improvements would you like to see to this form?
                 </label>
-                <select name="dropdown" id="dropdown" required>
+                <select name="dropdown" id="dropdown" tabindex="10" required>
                     <option value="perfect" selected>None - this form is perfect as it is!</option>
                     <option value="blinding">Make it less awesome, its greatness is blinding</option>
                 </select>
             </div>
             <div class="form-field always-mobile">
                 <label for="additional-comments">Other Comments</label>
-                <textarea name="additional-comments" id="additional-comments" rows="8"></textarea>
+                <textarea name="additional-comments" id="additional-comments" rows="8" tabindex="11"></textarea>
             </div>
             <div>
-                <button type="submit" id="submit">
+                <button type="submit" id="submit" tabindex="12">
                     Submit
                 </button>
             </div>

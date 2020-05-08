@@ -29,6 +29,14 @@ input[type="number"] {
   border: 2px solid black;
 }
 
+:focus,
+button:hover,
+.toggle-button:focus > .toggle-button__clickable,
+.toggle-button__clickable:hover {
+  border-color: 4px solid black;
+  box-shadow: 0 0 0 0.2em #c6c6c6;
+}
+
 input[type="text"],
 input[type="email"] {
   padding-left: 2em;
@@ -115,6 +123,11 @@ small {
   text-align: center;
 }
 
+.toggle-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
 .toggle-button input[type="radio"],
 .toggle-button input[type="checkbox"] {
   display: none;
@@ -136,6 +149,7 @@ input:disabled ~ .toggle-button__clickable {
   text-decoration: line-through;
 }
 
+.toggle-button__clickable:focus,
 .toggle-button__clickable:hover {
   border-color: black;
   opacity: 0.6;
