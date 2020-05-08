@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Survey Form</title>
 </head>
@@ -46,21 +46,21 @@
                 <div class="toggle-button-container">
                     <label for="feelings-fire" class="toggle-button" tabindex="4">
                         <input type="radio" name="feelings" id="feelings-fire" value="fire" checked />
-                        <div class="toggle-button__clickable">
+                        <span class="toggle-button__clickable">
                             This is 🔥🔥
-                        </div>
+                        </span>
                     </label>
                     <label for="feelings-disagree" class="toggle-button" tabindex="5">
                         <input type="radio" name="feelings" id="feelings-disagree" value="disagree" />
-                        <div class="toggle-button__clickable">
+                        <span class="toggle-button__clickable">
                             Best. Form. Ever.
-                        </div>
+                        </span>
                     </label>
                     <label for="radio-worst-thing" class="toggle-button" tabindex="6">
                         <input type="radio" name="feelings" id="radio-worst-thing" value="worst-thing" disabled />
-                        <div class="toggle-button__clickable">
+                        <span class="toggle-button__clickable">
                             This is the worst thing I've ever seen
-                        </div>
+                        </span>
                     </label>
                 </div>
             </fieldset>
@@ -70,23 +70,23 @@
                     <label for="checkbox-creative-color" class="toggle-button" tabindex="7">
                         <input type="checkbox" name="checkbox" id="checkbox-creative-color" value="creative-color"
                             tabindex="7" />
-                        <div class="toggle-button__clickable">
+                        <span class="toggle-button__clickable">
                             Creative Use Of Color
-                        </div>
+                        </span>
                     </label>
                     <label for="checkbox-fantastic-ux" class="toggle-button" tabindex="8">
                         <input type="checkbox" name="checkbox" id="checkbox-fantastic-ux" value="fantastic-ux"
                             tabindex="8" />
-                        <div class="toggle-button__clickable">
+                        <span class="toggle-button__clickable">
                             Fantastic User Experience
-                        </div>
+                        </span>
                     </label>
                     <label for="checkbox-thoughtful" class="toggle-button" tabindex="9">
                         <input type="checkbox" name="checkbox" id="checkbox-thoughtful" value="thoughtful"
                             tabindex="9" />
-                        <div class="toggle-button__clickable">
+                        <span class="toggle-button__clickable">
                             Thoughtful answers to each question
-                        </div>
+                        </span>
                     </label>
                 </div>
             </fieldset>
@@ -94,8 +94,8 @@
                 <label for="dropdown">
                     What improvements would you like to see to this form?
                 </label>
-                <select name="dropdown" id="dropdown" tabindex="10" required>
-                    <option value="perfect" selected>None - this form is perfect as it is!</option>
+                <select name="dropdown" id="dropdown" tabindex="10">
+                    <option value="perfect">None - this form is perfect as it is!</option>
                     <option value="blinding">Make it less awesome, its greatness is blinding</option>
                 </select>
             </div>
@@ -110,9 +110,14 @@
             </div>
         </form>
     </main>
+    <footer>
+        <p>
+            This site is open source. <a href="https://github.com/JoelLau/fcc-survey-form">View the code on GitHub</a>
+        </p>
+        <p>Built by <a href="https://github.com/JoelLau">Joel Lau</a> 2020.</p>
+    </footer>
     <!-- javascript -->
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
